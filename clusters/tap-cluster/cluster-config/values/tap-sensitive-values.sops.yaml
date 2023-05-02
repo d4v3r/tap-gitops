@@ -1,0 +1,39 @@
+tap_install:
+ sensitive_values:
+  shared:
+    image_registry:
+       project_path: "gcr.io/fe-droberts/build-service"
+       username: "_json_key"
+       password: |
+         {
+           "type": "service_account",
+           "project_id": "fe-droberts",
+           "private_key_id": "33f2789102cf3be34ebdb42d4109ff7fc83fb48d",
+           "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDwFXem5nDI0fge\nHL4nXVwErlqAlsJykEQSJHWJqv6nPSpoHvXX5uwW870yzcmS+wsTodLVMpnWz0am\nK3PieBr/3ybSi9F2/fAe096ZpYVwDIQmrR0WsRobB2BN8W89kZeRxJZHsyHp3pyN\nAf6llGkwyMhxI2KigtrVuW7qtE7ASJ15L4XfAgXzaorlOZPDVwR7N9/+lyvzT1Nk\nPb0iIyT9z8OO/JT14S5zFace/0dDuSbsNdBs5bHNVnqLH8h/+DxrSdKEB0Nh3coG\nqkjH8rEF7R9tQlMtGuYfIhdDqPD4EIvca5OSZ+Z0ywQou7gDZ6Bv/E0CfKlsoQN/\nOTSxW/ubAgMBAAECggEAVXn/KJ/gxc7jvKzVEqTNjykYNbH3NtygL6llY4dKtPY0\n8+8Z7i1cHuvWj5Du1HKmxe2WZ6tlVDJl3+GWl6nVSwYDB3EaOXg9lmwuU5u3v2Xl\nYvO9aIfTWI4uvnFX/p6oTRClxI9FYsOMDzQHmqIVNXY2zvkfM+bMzM0BbXSWmSRQ\ny4SRHhwr9LTkBq/A4DEwiC0ZgJraILtK5YAf2l/rDcFnVTkHpB5RP/WF4Htx99FA\ncFSAPdbPR/P1ihvgwve1bjmOaOMG9EdNn21swu1ATr35AR1U9ywfY8JurSG427uj\nupKlRru4oGoizkJ/RGFMtJI7dMVpw0NydmjC1/qbcQKBgQD5hxI9Kg5LDh1gPc/5\nkPvF2JV/kujUsynk17lc88/h1t9vpA63CF9LpThVxA6Lqyf+itH9R4REA3NC8N3w\nzQRgSzZPjdB6Pys1Daz8Ux5jSgxq8cWU8aKlLFQToPiNnbby3HlCybPXKY93jrdR\nJs3a0Boj0V2q/bKUPRm/yrJRmQKBgQD2T6/j7OdrUfRo0Agf5aRzOqN/0EaNdGvU\nYOIDqb9DC8SjUro0BSmdkgcqS9yjjelEicFL4nQOquazZOt0J9EWJ50kpSmANwwL\nmbCSgY5j3+fGA5YK7dsUX0hi8IGPvS0zmRsTn80jB7++Ug0eUaZ545yZyxCX4q3n\nGj0cLTofUwKBgFBg8UAgpwAIaPASmUcELAY8UVQKB9RUbl9YGk7V/xX5uHnm+BJ/\nsOrWKwJ9qE3XcYeuQhx7iCC8l8lte6DQ+eLm93TC8vAeHxX09M9HGxfSx5M/lGz5\nNXJNiDvWc5pyvncXDDy2aqcZrSxPHcAXZuJgfLsi+zBUjszvrba5XZ2pAoGBAMR5\nui9QySSlYhW9Y821y+EStFr/E1hAtsbZZVBQtj1QBNHW6qsWNyT21/pYOy7Hw3wl\nemgCwlr03kPZS6wDGtjWTpZtnNYmktgqB1xGNgPbFjGwqJ4dL7VncAFkIaU73POc\nvKmBvgukYcH6B3bY4Le35TIUdi8B5YBEQNzaAtP7AoGBAIU1hrCN0CgkempZA5u3\nXFkVVRYgObW4rS+d22jEB8c/mjQsf4cz/n0u1OMaJlOwtlG1/gvV1VQC4aX2E8IU\nkOIhFrwyeuXTxldug696zVKvqJZRMcr2RK5T5RWecEWtbxbJTeJtIpjLGwQuAfVV\nDcrv/rEgq0F9uPr2zAIXaB41\n-----END PRIVATE KEY-----\n",
+           "client_email": "tap-643@fe-droberts.iam.gserviceaccount.com",
+           "client_id": "100828037679536579152",
+           "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+           "token_uri": "https://oauth2.googleapis.com/token",
+           "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+           "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tap-643%40fe-droberts.iam.gserviceaccount.com"
+         }
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age19uwcmfp6gt0gvt7tvv6ysr9n26x2ra8ene52vvhz4p95sf0j3skqefq9zs
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTL28wc2NRWVNqMmdBV25Y
+            NkNuYW16MFIzN281NDVjeGQ5TjA0b2UrczFJCkJYczhTY1UzZ0FqUS9HNnd5TjhK
+            QkJnNk1GRVhPY0pTcVZsYXN5eUpQc3MKLS0tIElmSEZ6WXBQVEp5czZaV253eFgy
+            VEdlUlFlSU50NThsYW03Tkt3WjdzR2sKBwTKu+CtKTw1vePoZTQcbZCYUHzZm7eA
+            UJ64y3X+4+5A0iN0MNtAzJEFocaorTEVHNEwogVmFviMvzgG2B0O0A==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2023-05-02T21:39:12Z"
+    mac: ENC[AES256_GCM,data:+4Tqi9vxQdcP5PI9p3+Hb6Okh0bSgR64Sxg5eQwv8yu95JtUCRdb14/tGoBF2xCxzOhYwyXPbGnJ9bHVxyWPkpfNfzM3+0Lw07IwT97nvWv9Q9hUTk7bM6mje/x7o8t/6ei4li0XkLTpM9EURtXI1Kf2R5gEdIBz6orqZvxSmu4=,iv:R6FRYR+GTMThQNHkoRmKDHS3SRLtmZhRQZEHu7zkjJU=,tag:ikYmM4uy05tSISem+lkGOw==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.3
