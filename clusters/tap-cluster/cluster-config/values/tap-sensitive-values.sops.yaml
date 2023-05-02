@@ -1,22 +1,10 @@
 tap_install:
- sensitive_values:
-  shared:
-    image_registry:
-       project_path: "gcr.io/fe-droberts/build-service"
-       username: "_json_key"
-       password: |
-         {
-           "type": "service_account",
-           "project_id": "fe-droberts",
-           "private_key_id": "33f2789102cf3be34ebdb42d4109ff7fc83fb48d",
-           "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDwFXem5nDI0fge\nHL4nXVwErlqAlsJykEQSJHWJqv6nPSpoHvXX5uwW870yzcmS+wsTodLVMpnWz0am\nK3PieBr/3ybSi9F2/fAe096ZpYVwDIQmrR0WsRobB2BN8W89kZeRxJZHsyHp3pyN\nAf6llGkwyMhxI2KigtrVuW7qtE7ASJ15L4XfAgXzaorlOZPDVwR7N9/+lyvzT1Nk\nPb0iIyT9z8OO/JT14S5zFace/0dDuSbsNdBs5bHNVnqLH8h/+DxrSdKEB0Nh3coG\nqkjH8rEF7R9tQlMtGuYfIhdDqPD4EIvca5OSZ+Z0ywQou7gDZ6Bv/E0CfKlsoQN/\nOTSxW/ubAgMBAAECggEAVXn/KJ/gxc7jvKzVEqTNjykYNbH3NtygL6llY4dKtPY0\n8+8Z7i1cHuvWj5Du1HKmxe2WZ6tlVDJl3+GWl6nVSwYDB3EaOXg9lmwuU5u3v2Xl\nYvO9aIfTWI4uvnFX/p6oTRClxI9FYsOMDzQHmqIVNXY2zvkfM+bMzM0BbXSWmSRQ\ny4SRHhwr9LTkBq/A4DEwiC0ZgJraILtK5YAf2l/rDcFnVTkHpB5RP/WF4Htx99FA\ncFSAPdbPR/P1ihvgwve1bjmOaOMG9EdNn21swu1ATr35AR1U9ywfY8JurSG427uj\nupKlRru4oGoizkJ/RGFMtJI7dMVpw0NydmjC1/qbcQKBgQD5hxI9Kg5LDh1gPc/5\nkPvF2JV/kujUsynk17lc88/h1t9vpA63CF9LpThVxA6Lqyf+itH9R4REA3NC8N3w\nzQRgSzZPjdB6Pys1Daz8Ux5jSgxq8cWU8aKlLFQToPiNnbby3HlCybPXKY93jrdR\nJs3a0Boj0V2q/bKUPRm/yrJRmQKBgQD2T6/j7OdrUfRo0Agf5aRzOqN/0EaNdGvU\nYOIDqb9DC8SjUro0BSmdkgcqS9yjjelEicFL4nQOquazZOt0J9EWJ50kpSmANwwL\nmbCSgY5j3+fGA5YK7dsUX0hi8IGPvS0zmRsTn80jB7++Ug0eUaZ545yZyxCX4q3n\nGj0cLTofUwKBgFBg8UAgpwAIaPASmUcELAY8UVQKB9RUbl9YGk7V/xX5uHnm+BJ/\nsOrWKwJ9qE3XcYeuQhx7iCC8l8lte6DQ+eLm93TC8vAeHxX09M9HGxfSx5M/lGz5\nNXJNiDvWc5pyvncXDDy2aqcZrSxPHcAXZuJgfLsi+zBUjszvrba5XZ2pAoGBAMR5\nui9QySSlYhW9Y821y+EStFr/E1hAtsbZZVBQtj1QBNHW6qsWNyT21/pYOy7Hw3wl\nemgCwlr03kPZS6wDGtjWTpZtnNYmktgqB1xGNgPbFjGwqJ4dL7VncAFkIaU73POc\nvKmBvgukYcH6B3bY4Le35TIUdi8B5YBEQNzaAtP7AoGBAIU1hrCN0CgkempZA5u3\nXFkVVRYgObW4rS+d22jEB8c/mjQsf4cz/n0u1OMaJlOwtlG1/gvV1VQC4aX2E8IU\nkOIhFrwyeuXTxldug696zVKvqJZRMcr2RK5T5RWecEWtbxbJTeJtIpjLGwQuAfVV\nDcrv/rEgq0F9uPr2zAIXaB41\n-----END PRIVATE KEY-----\n",
-           "client_email": "tap-643@fe-droberts.iam.gserviceaccount.com",
-           "client_id": "100828037679536579152",
-           "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-           "token_uri": "https://oauth2.googleapis.com/token",
-           "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-           "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tap-643%40fe-droberts.iam.gserviceaccount.com"
-         }
+    sensitive_values:
+        shared:
+            image_registry:
+                project_path: ENC[AES256_GCM,data:HFEOU4pjNIuyynckdO28FiXJnJCVI8XBIAAyIiy2TIM=,iv:LbkE0LdAfS8t2VUY/o3fharqobISlkK487udlRSdlvM=,tag:dm6WDaz4KHqYl/k5GkzppQ==,type:str]
+                username: ENC[AES256_GCM,data:UEjCRNlZjZtW,iv:pMSaagTkBdrj1YCJrSyh35jPy6DWhqpwot3OfQ3cTXM=,tag:7byGceYF1I6/EZX/qXsQbA==,type:str]
+                password: ENC[AES256_GCM,data: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,iv:f3gbDFzV8DjDr1KDba00ep7741MbtHpprM14rPLAvkI=,tag:hlIFe3zgDLHv90CKlgfdZw==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -32,8 +20,8 @@ sops:
             VEdlUlFlSU50NThsYW03Tkt3WjdzR2sKBwTKu+CtKTw1vePoZTQcbZCYUHzZm7eA
             UJ64y3X+4+5A0iN0MNtAzJEFocaorTEVHNEwogVmFviMvzgG2B0O0A==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-05-02T21:39:12Z"
-    mac: ENC[AES256_GCM,data:+4Tqi9vxQdcP5PI9p3+Hb6Okh0bSgR64Sxg5eQwv8yu95JtUCRdb14/tGoBF2xCxzOhYwyXPbGnJ9bHVxyWPkpfNfzM3+0Lw07IwT97nvWv9Q9hUTk7bM6mje/x7o8t/6ei4li0XkLTpM9EURtXI1Kf2R5gEdIBz6orqZvxSmu4=,iv:R6FRYR+GTMThQNHkoRmKDHS3SRLtmZhRQZEHu7zkjJU=,tag:ikYmM4uy05tSISem+lkGOw==,type:str]
+    lastmodified: "2023-05-02T23:41:58Z"
+    mac: ENC[AES256_GCM,data:A7K4mhjDVxhnF/Dy/6hJjmRfGzl9Kqf37LEfsS8XRE91ulQUx7Ydtge8C0TGjSIc/jphcZIK2P7kcHfrBp8DDXU7pOhcSRpFFERpfF5j1PKDzUR0pQT4Ds05j9FY8RI6aL4pAEcXU0BGJHazNXvL1iCtNv9dQ/C7lDzrgTd5aQU=,iv:g0ydvJI7QxklVgODHDUxpVmPPRQXzvkfBNinjlkiEVk=,tag:ton1yQK2atVeVqeSl88R1g==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
