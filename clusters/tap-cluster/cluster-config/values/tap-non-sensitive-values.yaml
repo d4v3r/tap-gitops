@@ -2,19 +2,12 @@ tap_install:
   values:
     shared:
       ingress_domain: "tap.hillcountrycloud.net"
-      ingress_issuer: # Optional, can denote a cert-manager.io/v1/ClusterIssuer of your choice. Defaults to "tap-ingress-selfsigned".
 
       image_registry:
         project_path: "SERVER-NAME/REPO-NAME"
         secret:
           name: "KP-DEFAULT-REPO-SECRET"
           namespace: "KP-DEFAULT-REPO-SECRET-NAMESPACE"
-
-    kubernetes_distribution: # Only required if the distribution is OpenShift and must be used with the following kubernetes_version key.
-
-    kubernetes_version: # Required regardless of distribution when Kubernetes version is 1.25 or later.
-
-    ca_cert_data:
 
     ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
 
