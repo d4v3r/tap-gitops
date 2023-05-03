@@ -29,7 +29,6 @@ tap_install:
     buildservice:
       # Takes the value from the shared section by default, but can be overridden by setting a different value.
       kp_default_repository: "gcr.io/fe-droberts/build-service"
-      kp_default_repository_secret: # Takes the value from the shared section above by default, but can be overridden by setting a different value.
 
     tap_gui:
       service_type: ClusterIP # If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
@@ -55,4 +54,3 @@ tap_install:
 
     policy:
       tuf_enabled: false # By default, TUF initialization and keyless verification are deactivated.
-    tap_telemetry:
