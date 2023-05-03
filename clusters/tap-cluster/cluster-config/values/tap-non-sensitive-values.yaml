@@ -63,4 +63,3 @@ tap_install:
     policy:
       tuf_enabled: false # By default, TUF initialization and keyless verification are deactivated.
     tap_telemetry:
-      customer_entitlement_account_number: # (Optional) Identify data for creating the Tanzu Application Platform usage reports.
