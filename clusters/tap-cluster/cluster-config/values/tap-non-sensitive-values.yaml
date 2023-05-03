@@ -4,10 +4,6 @@ tap_install:
       ingress_domain: "tap.hillcountrycloud.net"
 
       image_registry:
-        project_path: "SERVER-NAME/REPO-NAME"
-        secret:
-          name: "KP-DEFAULT-REPO-SECRET"
-          namespace: "KP-DEFAULT-REPO-SECRET-NAMESPACE"
 
     ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
 
@@ -35,8 +31,6 @@ tap_install:
       # Takes the value from the shared section by default, but can be overridden by setting a different value.
       kp_default_repository: "gcr.io/fe-droberts/build-service"
       kp_default_repository_secret: # Takes the value from the shared section above by default, but can be overridden by setting a different value.
-        name: "KP-DEFAULT-REPO-SECRET"
-        namespace: "KP-DEFAULT-REPO-SECRET-NAMESPACE"
 
     tap_gui:
       service_type: ClusterIP # If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
