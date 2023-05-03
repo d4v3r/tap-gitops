@@ -3,7 +3,6 @@ tap_install:
     shared:
       ingress_domain: "tap.hillcountrycloud.net"
 
-      image_registry:
 
     ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
 
